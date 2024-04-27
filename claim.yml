@@ -2,9 +2,9 @@
 - name: Claim the node to Netdata Cloud
   hosts: all
   vars_files:
-    - "../vars/main.yml"
+    - "./main.yml"
   become: true
-  become_method: sudo
+  become_user: root
 
   tasks:
   - name: Claim to Netdata Cloud
