@@ -4,7 +4,7 @@
   vars_files:
     - "./main.yml"
   become: true
-  become_method: sudo
+  become_user: root
 
   tasks:
   - name: Download the installation script
